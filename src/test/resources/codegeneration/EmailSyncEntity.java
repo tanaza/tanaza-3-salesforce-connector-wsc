@@ -11,6 +11,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
      */
     public EmailSyncEntity() {}
 
+    public static String getObjectName(){
+      return "EmailSyncEntity"; 
+    }
+
     /* Cache the typeInfo instead of declaring static fields throughout*/
     private transient java.util.Map<String, com.sforce.ws.bind.TypeInfo> typeInfoCache = new java.util.HashMap<String, com.sforce.ws.bind.TypeInfo>();
     private com.sforce.ws.bind.TypeInfo _lookupTypeInfo(String fieldName, String namespace, String name, String typeNS, String type, int minOcc, int maxOcc, boolean elementForm) {
@@ -51,6 +55,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
       __typeMapper.writeObject(__out, _lookupTypeInfo("conflictResolution", "urn:partner.soap.sforce.com","conflictResolution","urn:partner.soap.sforce.com","EmailSyncConflictResolution",1,1,true), conflictResolution, conflictResolution__is_set);
     }
 
+    public static String getFieldName_conflictResolution(){
+      return "conflictResolution"; 
+    }
+
     /**
      * element : dataSetFilter of type {http://www.w3.org/2001/XMLSchema}string
      * java type: java.lang.String
@@ -78,6 +86,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
 
     private void writeFieldDataSetFilter(com.sforce.ws.parser.XmlOutputStream __out, com.sforce.ws.bind.TypeMapper __typeMapper) throws java.io.IOException {
       __typeMapper.writeObject(__out, _lookupTypeInfo("dataSetFilter", "urn:partner.soap.sforce.com","dataSetFilter","http://www.w3.org/2001/XMLSchema","string",0,1,true), dataSetFilter, dataSetFilter__is_set);
+    }
+
+    public static String getFieldName_dataSetFilter(){
+      return "dataSetFilter"; 
     }
 
     /**
@@ -109,6 +121,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
       __typeMapper.writeObject(__out, _lookupTypeInfo("fieldMapping", "urn:partner.soap.sforce.com","fieldMapping","urn:partner.soap.sforce.com","EmailSyncFieldMapping",0,-1,true), fieldMapping, fieldMapping__is_set);
     }
 
+    public static String getFieldName_fieldMapping(){
+      return "fieldMapping"; 
+    }
+
     /**
      * element : matchPreference of type {urn:partner.soap.sforce.com}EmailSyncMatchPreference
      * java type: com.sforce.soap.partner.wsc.EmailSyncMatchPreference
@@ -136,6 +152,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
 
     private void writeFieldMatchPreference(com.sforce.ws.parser.XmlOutputStream __out, com.sforce.ws.bind.TypeMapper __typeMapper) throws java.io.IOException {
       __typeMapper.writeObject(__out, _lookupTypeInfo("matchPreference", "urn:partner.soap.sforce.com","matchPreference","urn:partner.soap.sforce.com","EmailSyncMatchPreference",1,1,true), matchPreference, matchPreference__is_set);
+    }
+
+    public static String getFieldName_matchPreference(){
+      return "matchPreference"; 
     }
 
     /**
@@ -167,6 +187,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
       __typeMapper.writeObject(__out, _lookupTypeInfo("name", "urn:partner.soap.sforce.com","name","http://www.w3.org/2001/XMLSchema","string",1,1,true), name, name__is_set);
     }
 
+    public static String getFieldName_name(){
+      return "name"; 
+    }
+
     /**
      * element : recordTypeId of type {urn:partner.soap.sforce.com}ID
      * java type: java.lang.String
@@ -196,6 +220,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
       __typeMapper.writeObject(__out, _lookupTypeInfo("recordTypeId", "urn:partner.soap.sforce.com","recordTypeId","urn:partner.soap.sforce.com","ID",1,1,true), recordTypeId, recordTypeId__is_set);
     }
 
+    public static String getFieldName_recordTypeId(){
+      return "recordTypeId"; 
+    }
+
     /**
      * element : syncDirection of type {urn:partner.soap.sforce.com}EmailSyncDirection
      * java type: com.sforce.soap.partner.wsc.EmailSyncDirection
@@ -223,6 +251,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
 
     private void writeFieldSyncDirection(com.sforce.ws.parser.XmlOutputStream __out, com.sforce.ws.bind.TypeMapper __typeMapper) throws java.io.IOException {
       __typeMapper.writeObject(__out, _lookupTypeInfo("syncDirection", "urn:partner.soap.sforce.com","syncDirection","urn:partner.soap.sforce.com","EmailSyncDirection",1,1,true), syncDirection, syncDirection__is_set);
+    }
+
+    public static String getFieldName_syncDirection(){
+      return "syncDirection"; 
     }
 
     /**
@@ -256,6 +288,10 @@ public class EmailSyncEntity implements com.sforce.ws.bind.XMLizable {
 
     private void writeFieldSyncFollowed(com.sforce.ws.parser.XmlOutputStream __out, com.sforce.ws.bind.TypeMapper __typeMapper) throws java.io.IOException {
       __typeMapper.writeObject(__out, _lookupTypeInfo("syncFollowed", "urn:partner.soap.sforce.com","syncFollowed","http://www.w3.org/2001/XMLSchema","boolean",1,1,true), syncFollowed, syncFollowed__is_set);
+    }
+
+    public static String getFieldName_syncFollowed(){
+      return "syncFollowed"; 
     }
 
     /**

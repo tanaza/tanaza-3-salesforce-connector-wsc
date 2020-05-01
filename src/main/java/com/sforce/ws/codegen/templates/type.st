@@ -11,6 +11,10 @@ public class $gen.className$ $gen.typeExtension$ $gen.interfaceExtension${
      * Constructor
      */
     public $gen.className$() {}
+
+    public static String getObjectName(){
+      return "$gen.className$"; 
+    \}
     
     /* Cache the typeInfo instead of declaring static fields throughout*/
     private transient java.util.Map<String, com.sforce.ws.bind.TypeInfo> typeInfoCache = new java.util.HashMap<String, com.sforce.ws.bind.TypeInfo>();
@@ -64,6 +68,10 @@ $endif$
 
   private void $member.writeMethodName$(com.sforce.ws.parser.XmlOutputStream __out, com.sforce.ws.bind.TypeMapper __typeMapper) throws java.io.IOException {
     __typeMapper.writeObject(__out, _lookupTypeInfo("$member.fieldName$", $member.typeInfo$), $member.fieldName$, $member.fieldName$__is_set);
+  \}
+
+  public static String getFieldName_$member.fieldName$(){
+    return "$member.fieldName$"; 
   \}
 
    }$    /**
